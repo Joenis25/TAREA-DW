@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: left; padding: 30px; background-color: #b08ce1">
+        <form action="#">
+          <div>
+         <legend>¡HAZ TU PEDIDO!</legend>
+            <label for="nombre">¿Tipo de torta?</label>
+            <input type="text" name="nombre" id="nombre" />
+          </div>
+          <div>
+            <label for="sabor">¿Sabor?</label>
+            <input type="number" name="sabor" id="sabor" />
+          </div>
+  
+          <div>
+            <label for="relleno">¿Relleno de elección?</label>
+            <input type="text" name="relleno" id="relleno" />
+          </div>
+          <div>
+            <label for="decoracion">¿cuantos pisos desea?</label>
+            <input type="number" name="decoracion" id="decoracion" />
+          </div>
+          <div>
+            <label for="radio">*Efectivo*</label>
+            <input type="radio" name="efectivo" id="efectivo" />
+            <label for="radio">*Tranferencia*</label>
+            <input type="radio" name="tranferencia" id="tranferencia" />
+          </div>
+          <div>
+            <label for="estilo">Guia de estilo</label>
+            <input type="file" name="estilo" id="estilo" />
+          </div>
+          <div>
+            <input type="checkbox" name="check" id="check" />
+            <label for="check">Hacerme cliente estrella</label>
+          </div>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Borrar" />
+        </form>
+      </div>
+      <div style="text-align: left; padding: 50px; background-color: #badee9">
+        <form action="#">
+          <fieldset>
+            <legend>Datos de contacto</legend>
+            <div>
+              <label for="ciudad">Ciudad</label>
+              <select name="ciudad" id="ciudad">
+                <option value="barranquilla">Barranquilla</option>
+                <option value="riohacha">Riohacha</option>
+                <option value="valledupar">Valledupar</option>
+              </select>
+            </div>
+            <div>
+              <label for="fecha">Fecha entrega-pedido</label>
+              <div>
+                <!-- Dias -->
+                <input
+                  type="text"
+                  name="dias"
+                  id="dias"
+                  min="1"
+                  max="31"
+                  width="4"
+                />
+                de
+                <select name="mes" id=" mes">
+                  <option value="enero">Enero</option>
+                  <option value="febrero">Febrero</option>
+                  <option value="marzo">Marzo</option>
+                  <option value="abril">Abril</option>
+                  <option value="mayo">Mayo</option>
+                  <option value="junio">Junio</option>
+                  <option value="julio">Julio</option>
+                  <option value="agosto">Agosto</option>
+                  <option value="septiembre">Septiembre</option>
+                  <option value="octubre">Octubre</option>
+                  <option value="noviembre">Noviembre</option>
+                  <option value="diciembre">Diciembre</option>
+                </select>
+                de
+                <input
+                  type="text"
+                  name="anios"
+                  id="anios"
+                  min="1900"
+                  max="2024"
+                  width="4"
+                />
+              </div>
+            </div>
+  
+            <div>
+              <label for="evolucion&mejora">Recomendaciones</label>
+              <select name="evolucion&mejora" id="evolucion&mejora" multiple>
+                <option value="primer">mejorar atencion</option>
+                <option value="segundo">mejores empaques</option>
+                <option value="tercero">hacer promos</option>
+              </select>
+            </div>
+            <input type="submit" value="Enviar" />
+          </fieldset>
+        </form>
+    </div>
+</body>
+</html>
